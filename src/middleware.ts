@@ -42,7 +42,7 @@ export function addMiddlewareToSchema<TSource, TContext, TArgs>(
   const newSchema = addResolversToSchema({
     schema,
     resolvers,
-    updateResolversInPlace: false,
+    updateResolversInPlace: true,
     resolverValidationOptions: {
       requireResolversForResolveType: 'ignore',
     },
